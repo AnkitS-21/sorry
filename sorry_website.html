@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I'm Sorry BUBUUUUUUUUUUU❤️</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:Georgia,'Times New Roman',serif;color:#603b48;background:linear-gradient(135deg,#fff0f5,#fce4ec,#fff6e8);overflow-x:hidden}
+#hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}.heart{position:absolute;bottom:-30px;animation:float linear infinite;opacity:.5;font-size:20px}@keyframes float{to{transform:translateY(-110vh) rotate(25deg);opacity:0}}
+main{position:relative;z-index:1;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}.card{max-width:720px;width:100%;padding:clamp(25px,5vw,52px);background:rgba(255,255,255,.74);border:1px solid rgba(255,255,255,.85);border-radius:28px;box-shadow:0 20px 60px rgba(173,85,119,.14);text-align:center;backdrop-filter:blur(12px)}
+.tag{letter-spacing:3px;text-transform:uppercase;font-size:12px;color:#b66b86}.emoji{font-size:50px;margin:16px}.title{font-size:clamp(32px,6vw,48px);line-height:1.15;margin:12px 0;color:#a34d70}.text{font-size:18px;line-height:1.85;white-space:pre-line}.small{font-size:14px;color:#946d7b;line-height:1.7}
+button{border:0;border-radius:999px;padding:14px 24px;background:#d66b91;color:white;font-size:16px;cursor:pointer;box-shadow:0 8px 20px #d66b9133;transition:.2s;margin:8px}button:hover{transform:translateY(-2px);background:#bf557d}.secondary{background:#f7dbe6;color:#9a4b6c}.section{display:none;animation:fade .5s ease}.section.active{display:block}@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.divider{margin:24px auto;color:#d28aa5;letter-spacing:8px}.footer{margin-top:28px;font-size:13px;color:#a77b8d}.spark{font-size:25px}
+</style>
+</head>
+<body>
+<div id="hearts"></div>
+<main><div class="card">
+<div class="section active" id="s0"><div class="tag">A little something from me</div><div class="emoji">💗</div><h1 class="title">Can I say something?</h1><p class="text">Not to win an argument this time<br>just to genuinely say what I should have said earlier</p><button onclick="next(1)">Read my heart 💌</button></div>
+<div class="section" id="s1"><div class="tag">I'm truly sorry cutieeeeee</div><div class="emoji">🥺</div><h1 class="title">I am sorry</h1><p class="text">When you were trying to tell me that I hurt you I should have listened and apologised instead of bringing up your mistakes and saying that you did the same thing too
+
+Your feelings deserved to be heard without me turning the conversation into a defence of myself</p><button onclick="next(2)">There's more…</button></div>
+<div class="section" id="s2"><div class="tag">I know this is a pattern</div><div class="emoji">🫂</div><h1 class="title">I know words aren't enough</h1><p class="text">I know I have repeated this and I understand why another apology might not feel convincing
+
+I don't want to keep making promises just to repeat the same behaviour
+
+I want to learn to pause and listen and take responsibility first and talk about my own feelings without using them to dismiss yours</p><button onclick="next(3)">What I wish to do 💞</button></div>
+<div class="section" id="s3"><div class="tag">A promise I want to work on</div><div class="emoji">🌷</div><h1 class="title">Not a perfect boyfriend</h1><p class="text">I cannot promise that I'll never make a mistake again but I can promise to genuinely work on how I react
+
+I want to be someone with whom you feel heard and safe and respected and I know that has to be shown through my actions not just through this website</p><button onclick="next(4)">One last thing…</button></div>
+<div class="section" id="s4"><div class="tag">No pressure</div><div class="emoji">❤️</div><h1 class="title">I love you</h1><p class="text">I love you and I am sorry for hurting you
+
+I hope you can give us another chance but I understand that you need time and I won't pressure you to reply or forgive me right now
+
+Thank you for reading this</p><div class="divider">♡ ♡ ♡</div><p class="small">With love and sincere regret</p><button class="secondary" onclick="next(0)">Read it again</button></div>
+<div class="footer">Made with love and a wish to do better ✨</div>
+</div></main>
+<script>
+function next(n){document.querySelectorAll('.section').forEach(x=>x.classList.remove('active'));document.getElementById('s'+n).classList.add('active')}
+const box=document.getElementById('hearts');const symbols=['♡','💗','💕','♥','✧'];for(let i=0;i<28;i++){let h=document.createElement('span');h.className='heart';h.textContent=symbols[Math.floor(Math.random()*symbols.length)];h.style.left=Math.random()*100+'%';h.style.animationDuration=(7+Math.random()*9)+'s';h.style.animationDelay=(-Math.random()*12)+'s';h.style.fontSize=(14+Math.random()*22)+'px';box.appendChild(h)}
+</script>
+</body></html>
